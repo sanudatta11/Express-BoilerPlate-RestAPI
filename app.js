@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
 var app = express();
 
 //Swagger
-const swaggerDocument = require('./docs/sappen2-swagger.json');
+const swaggerDocument = require('./docs/swaggerUI.json');
 //CORS
 var corsOptions = {
     origin: ['*'],
@@ -41,7 +41,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors());
 
-app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+//Write Routes here
+
+// app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
