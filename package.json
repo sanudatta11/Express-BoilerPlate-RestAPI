@@ -1,5 +1,5 @@
 {
-  "name": "nomtrips-backend",
+  "name": "express-backend",
   "version": "0.0.0",
   "private": true,
   "scripts": {
